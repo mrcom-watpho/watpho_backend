@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>WATPHO  Backend</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+<link href="assets/css/default/app.min.css" rel="stylesheet" />
+
+</head>
+<body class='pace-top'>
+
+<div id="loader" class="app-loader">
+<span class="spinner"></span>
+</div>
+
+
+<div id="app" class="app">
+
+<div class="login login-v2 fw-bold">
+
+<div class="login-cover">
+<div class="login-cover-img" style="background-image: url(assets/img/login-bg/loginwatpho.jpg)" data-id="login-cover-image"></div>
+<div class="login-cover-bg"></div>
+</div>
+
+
+<div class="login-container">
+
+<div class="login-header">
+<div class="brand">
+<div class="d-flex align-items-center">
+	<img src="assets/img/logo.png" />
+</div>
+<small>เข้าสู่ระบบบริหารจัดการขายตั๋ว</small>
+</div>
+<div class="icon">
+<i class="fa fa-sign-in-alt"></i>
+</div>
+</div>
+
+
+<div class="login-content">
+<form action="checklogin.php" method="POST">
+<div class="form-floating mb-20px">
+<input type="text" name="txt_username" class="form-control fs-13px h-45px border-0" placeholder="Username" id="txt_username" />
+<label for="emailAddress" class="d-flex align-items-center text-gray-600 fs-13px">Username</label>
+</div>
+<div class="form-floating mb-20px">
+<input type="password" name="txt_password" class="form-control fs-13px h-45px border-0" placeholder="Password" id="txt_password" />
+<label for="emailAddress" class="d-flex align-items-center text-gray-600 fs-13px">Password</label>
+</div>
+<div class="form-check mb-20px">
+<input class="form-check-input border-0" type="checkbox" value="1" id="rememberMe" />
+<label class="form-check-label fs-13px text-gray-500" for="rememberMe">
+Remember Me
+</label>
+</div>
+<div class="mb-20px">
+<button type="submit" id="btn_login" name="btn_login" class="btn btn-success d-block w-100 h-45px btn-lg">Sign me in</button>
+</div>
+
+</form>
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+<script src="../assets/js/vendor.min.js" type="c5fda03ff3a697eb9032a895-text/javascript"></script>
+<script src="../assets/js/app.min.js" type="c5fda03ff3a697eb9032a895-text/javascript"></script>
+<script src="../assets/js/demo/login-v2.demo.js" type="c5fda03ff3a697eb9032a895-text/javascript"></script>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="c5fda03ff3a697eb9032a895-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"71b1206f6d5e6c69","version":"2022.6.0","r":1,"token":"4db8c6ef997743fda032d4f73cfeff63","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

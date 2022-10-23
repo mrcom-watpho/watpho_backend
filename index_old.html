@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title> Watpho | backend</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	
+	<!-- ================== BEGIN BASE CSS STYLE ================== -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+	<link href="assets/css/default/app.min.css" rel="stylesheet" />
+	<!-- ================== END BASE CSS STYLE ================== -->
+</head>
+<body class="pace-top">
+	<!-- begin #page-loader -->
+	<div id="page-loader" class="fade show">
+		<span class="spinner"></span>
+	</div>
+	<!-- end #page-loader -->
+	
+	<!-- begin #page-container -->
+	<div id="page-container" class="fade">
+		<!-- begin login -->
+		<div class="login login-with-news-feed">
+			<!-- begin news-feed -->
+			<div class="news-feed">
+				<div class="news-image" style="background-image: url(https://tatapi.tourismthailand.org/tatfs/IMAGE/CustomPOI/Picture/P03013446_pic1.jpg)"></div>
+				<div class="news-caption">
+					<h4 class="caption-title">ระบบบริหารจัดการระบบขายตั๋ว วัดโพธิ์</h4>
+				</div>
+			</div>
+			<!-- end news-feed -->
+			<!-- begin right-content -->
+			<div class="right-content">
+				<!-- begin login-header -->
+				<div class="login-header">
+				<div class="brand">
+						<div class="d-flex align-items-center">
+							<img src="assets/img/logo.png" />
+						</div>
+						<h2>เข้าสู่ระบบ</h2>
+					</div>
+					<div class="icon">
+						<i class="fa fa-sign-in-alt"></i>
+					</div>
+				</div>
+				<!-- end login-header -->
+				<!-- begin login-content -->
+				<div class="login-content">
+					<form action="checklogin.php" method="POST" class="margin-bottom-0">
+						<div class="form-floating mb-15px">
+							<input type="text" name="txt_username" class="form-control h-45px fs-13px" placeholder="Username" id="txt_username" />
+							<label for="emailAddress" class="d-flex align-items-center fs-13px text-gray-600">Username</label>
+						</div>
+						<div class="form-floating mb-15px">
+							<input type="password" name="txt_password" class="form-control h-45px fs-13px" placeholder="Password" id="txt_password" />
+							<label for="password" class="d-flex align-items-center fs-13px text-gray-600">Password</label>
+						</div>
+
+						<br>
+		
+						<div class="login-buttons">
+							<button type="submit" id="btn_login" name="btn_login" class="btn btn-success btn-block btn-lg">เข้าสู่ระบบ</button>
+						</div>
+						
+						<hr />
+						<p class="text-center text-grey-darker mb-0">
+							&copy; ktoutsource All Right Reserved 2021
+							
+						</p>
+					</form>
+				</div>
+				<!-- end login-content -->
+			</div>
+			<!-- end right-container -->
+		</div>
+		<!-- end login -->
+		
+		
+		<!-- begin scroll to top btn -->
+		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top fade" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
+		<!-- end scroll to top btn -->
+	</div>
+	<!-- end page container -->
+	
+</body>
+</html>
