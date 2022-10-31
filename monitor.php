@@ -124,12 +124,12 @@ for ($i = 0; $i < count($DataZone); $i++) {
                                         </div>
         
                                         <hr class="bg-white bg-opacity-50">
-                                        <h5><i class="fa fa-circle text-red fs-8px me-2"></i>&nbsp;พนักงาน<span class="float-right" id="POS<?php echo $POSStation[$DataZone[$i]][$j][0];?>fname"></span></h5>
+                                        <h5><i class="fa fa-circle text-red fs-8px me-2"></i>&nbsp;พนักงานขาย<span class="float-right" id="POS<?php echo $POSStation[$DataZone[$i]][$j][0];?>fname"></span></h5>
                                         <h5><i class="fa fa-circle text-green fs-8px me-2"></i>&nbsp;ลูกค้าทั่วไป<span class="float-right" id="POS<?php echo $POSStation[$DataZone[$i]][$j][0];?>ticket_diff"></span></h5>
                                         <h5><i class="fa fa-circle text-green fs-8px me-2"></i>&nbsp;กรุ๊ปทัวร์<span class="float-right" id="POS<?php echo $POSStation[$DataZone[$i]][$j][0];?>ticket_group"></span></h5>
                                         <h5><i class="fa fa-circle text-green fs-8px me-2"></i>&nbsp;รวมทั้งหมด<span class="float-right" id="POS<?php echo $POSStation[$DataZone[$i]][$j][0];?>ticket"></span></h5>
-                                        <h5><i class="fa fa-circle text-yellow fs-8px me-2"></i>&nbsp;ประตู<span class="float-right" id="POS<?php echo $POSStation[$DataZone[$i]][$j][0];?>door"></span></h5>
-                                        <h5><i class="fa fa-circle text-orange fs-8px me-2"></i>&nbsp;น้ำ<span class="float-right" id="POS<?php echo $POSStation[$DataZone[$i]][$j][0];?>water"></span></h5>
+                                        <h5><i class="fa fa-circle text-yellow fs-8px me-2"></i>&nbsp;เข้าประตู<span class="float-right" id="POS<?php echo $POSStation[$DataZone[$i]][$j][0];?>door"></span></h5>
+                                        <h5><i class="fa fa-circle text-orange fs-8px me-2"></i>&nbsp;น้ำขวด<span class="float-right" id="POS<?php echo $POSStation[$DataZone[$i]][$j][0];?>water"></span></h5>
                                         <h5><i class="fa fa-circle text-info fs-8px me-2"></i>&nbsp;คืนตั๋ว<span class="float-right" id="POS<?php echo $POSStation[$DataZone[$i]][$j][0];?>reticket"></span></h5>
                                     </div>
                                     <div class="col-auto">
