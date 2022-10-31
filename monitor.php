@@ -124,12 +124,12 @@ for ($i = 0; $i < count($DataZone); $i++) {
                                         </div>
         
                                         <hr class="bg-white bg-opacity-50">
-                                        <h5><i class="fa fa-circle text-red fs-8px me-2"></i>&nbsp;พนักงาน<span class="float-right" id="POS<?php echo $POSStation[$DataZone[$i]][$j][0];?>fname"></span></h5>
+                                        <h5><i class="fa fa-circle text-red fs-8px me-2"></i>&nbsp;พนักงานขาย<span class="float-right" id="POS<?php echo $POSStation[$DataZone[$i]][$j][0];?>fname"></span></h5>
                                         <h5><i class="fa fa-circle text-green fs-8px me-2"></i>&nbsp;ลูกค้าทั่วไป<span class="float-right" id="POS<?php echo $POSStation[$DataZone[$i]][$j][0];?>ticket_diff"></span></h5>
                                         <h5><i class="fa fa-circle text-green fs-8px me-2"></i>&nbsp;กรุ๊ปทัวร์<span class="float-right" id="POS<?php echo $POSStation[$DataZone[$i]][$j][0];?>ticket_group"></span></h5>
                                         <h5><i class="fa fa-circle text-green fs-8px me-2"></i>&nbsp;รวมทั้งหมด<span class="float-right" id="POS<?php echo $POSStation[$DataZone[$i]][$j][0];?>ticket"></span></h5>
-                                        <h5><i class="fa fa-circle text-yellow fs-8px me-2"></i>&nbsp;ประตู<span class="float-right" id="POS<?php echo $POSStation[$DataZone[$i]][$j][0];?>door"></span></h5>
-                                        <h5><i class="fa fa-circle text-orange fs-8px me-2"></i>&nbsp;น้ำ<span class="float-right" id="POS<?php echo $POSStation[$DataZone[$i]][$j][0];?>water"></span></h5>
+                                        <h5><i class="fa fa-circle text-yellow fs-8px me-2"></i>&nbsp;เข้าประตู<span class="float-right" id="POS<?php echo $POSStation[$DataZone[$i]][$j][0];?>door"></span></h5>
+                                        <h5><i class="fa fa-circle text-orange fs-8px me-2"></i>&nbsp;น้ำขวด<span class="float-right" id="POS<?php echo $POSStation[$DataZone[$i]][$j][0];?>water"></span></h5>
                                         <h5><i class="fa fa-circle text-info fs-8px me-2"></i>&nbsp;คืนตั๋ว<span class="float-right" id="POS<?php echo $POSStation[$DataZone[$i]][$j][0];?>reticket"></span></h5>
                                     </div>
                                     <div class="col-auto">
@@ -174,6 +174,114 @@ for ($i = 0; $i < count($DataZone); $i++) {
 ?>
 
 <!-- Content Row -->
+           <div class="row">
+               <div class="col-xl-3 col-md-6 mb-4">
+                   <div class="widget widget-stats bg-blue">
+                      <div class="stats-icon"><i class="fas fa-clock"></i></div>
+                        <div class="stats-info">
+                         <h2>เวลาล่าสุด</h2>
+                         <p><div class="h3 mb-0 font-weight-bold text-gray-800" id="updateTime"></div></p>
+                        </div>
+                      <div class="stats-link">
+                   <a href="javascript:;">View Detail <i class="fa fa-arrow-alt-circle-right"></i></a>
+                  </div>
+                 </div>
+               </div>
+
+               <!-- Earnings (Monthly) Card Example -->
+               <div class="col-xl-3 col-md-6 mb-4">
+                   <div class="widget widget-stats bg-yellow">
+                       <div class="stats-icon"><i class="fas fa-dollar-sign"></i></div>
+                          <div class="stats-info">
+                            <h2>ยอดขาย(วัน)</h2>
+                           <p> <div class="h3 mb-0 font-weight-bold text-gray-800" id="Total_price"></div></p>
+                   </div>
+                   <div class="stats-link">
+                   <a href="javascript:;">View Detail <i class="fa fa-arrow-alt-circle-right"></i></a>
+                  </div>
+                 </div>
+               </div>
+
+               <div class="col-xl-3 col-md-6 mb-4">
+               <div class="widget widget-stats bg-info">
+               <div class="stats-icon"><i class="fas fa-sign-in-alt"></i></div>
+               <div class="stats-info">
+               <h2>ผ่านประตู</h2>
+               <p> <div class="h3 mb-0 font-weight-bold text-gray-800" id="Total_Door"></div></p>
+               </div>
+               <div class="stats-link">
+               <a href="javascript:;">View Detail <i class="fa fa-arrow-alt-circle-right"></i></a>
+               </div>
+               </div>
+               </div>
+
+
+               <div class="col-xl-3 col-md-6 mb-4">
+               <div class="widget widget-stats bg-green">
+               <div class="stats-icon"><i class="fas fa-ticket-alt"></i></div>
+               <div class="stats-info">
+               <h2>คืนตั๋ว</h2>
+               <p> <div class="h3 mb-0 font-weight-bold text-gray-800" id="Total_Reticket"></div></p>
+               </div>
+               <div class="stats-link">
+               <a href="javascript:;">View Detail <i class="fa fa-arrow-alt-circle-right"></i></a>
+               </div>
+               </div>
+               </div>
+              
+
+               <div class="col-xl-3 col-md-6 mb-4">
+               <div class="widget widget-stats bg-green">
+               <div class="stats-icon"><i class="fas fa-ticket-alt"></i></div>
+               <div class="stats-info">
+               <h2>ยอดรวมตั๋วทั้งหมด</h2>
+               <p> <div class="h3 mb-0 font-weight-bold text-gray-800" id="Total_ticket"></div></p>
+               </div>
+               <div class="stats-link">
+               <a href="javascript:;">View Detail <i class="fa fa-arrow-alt-circle-right"></i></a>
+               </div>
+               </div>
+               </div>
+
+               <div class="col-xl-3 col-md-6 mb-4">
+               <div class="widget widget-stats bg-info">
+               <div class="stats-icon"><i class="fas fa-ticket-alt"></i></div>
+               <div class="stats-info">
+               <h2>ยอดรวมตั๋ว(ลูกค้าทั่วไป)</h2>
+               <p> <div class="h3 mb-0 font-weight-bold text-gray-800" id="Total_diff"></div></p>
+               </div>
+               <div class="stats-link">
+               <a href="javascript:;">View Detail <i class="fa fa-arrow-alt-circle-right"></i></a>
+               </div>
+               </div>
+               </div>
+
+               <div class="col-xl-3 col-md-6 mb-4">
+               <div class="widget widget-stats bg-orange">
+               <div class="stats-icon"><i class="fas fa-ticket-alt"></i></div>
+               <div class="stats-info">
+               <h2>ยอดรวมตั๋ว(กรุ๊ปทัวร์)</h2>
+               <p> <div class="h3 mb-0 font-weight-bold text-gray-800" id="Total_group"></div></p>
+               </div>
+               <div class="stats-link">
+               <a href="javascript:;">View Detail <i class="fa fa-arrow-alt-circle-right"></i></a>
+               </div>
+               </div>
+               </div>
+
+
+               <div class="col-xl-3 col-md-6 mb-4">
+               <div class="widget widget-stats bg-red">
+               <div class="stats-icon"><i class="fas fa-tint"></i></div>
+               <div class="stats-info">
+               <h2>น้ำ</h2>
+               <p> <div class="h3 mb-0 font-weight-bold text-gray-800" id="Total_Water"></div></p>
+               </div>
+               <div class="stats-link">
+               <a href="javascript:;">View Detail <i class="fa fa-arrow-alt-circle-right"></i></a>
+               </div>
+               </div>
+               </div>
 </div>
 	<!-- end page container -->
 	
